@@ -1,7 +1,5 @@
 package com.rodrigoc.cryptoapp.domain.model
 
-import kotlinx.serialization.SerialName
-
 data class Coin(
     val id: String,
     val isActive: Boolean,

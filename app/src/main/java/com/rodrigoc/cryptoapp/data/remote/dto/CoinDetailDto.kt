@@ -1,8 +1,7 @@
 package com.rodrigoc.cryptoapp.data.remote.dto
 
+import com.google.gson.annotations.SerializedName
 import com.rodrigoc.cryptoapp.domain.model.CoinDetail
-import kotlinx.coroutines.NonCancellable.isActive
-import kotlinx.serialization.SerialName
 
 data class CoinDetailDto(
     val contract: String,
@@ -13,7 +12,7 @@ data class CoinDetailDto(
     val hardware_wallet: Boolean,
     val hash_algorithm: String,
     val id: String,
-    @SerialName("is_active")
+    @SerializedName("is_active")
     val isActive: Boolean,
     val is_new: Boolean,
     val last_data_at: String,
